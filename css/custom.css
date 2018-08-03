@@ -1,0 +1,35 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-family: 'Coming Soon', cursive;
+}
+
+h2 {
+  font-family: 'Coming Soon', cursive;
+}
+
+#header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a#home {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#hero {
+  margin-bottom: 1rem;
+}
+
+#aside {
+  background-color: gray;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#credits {
+  padding-top: 3rem;
+}
