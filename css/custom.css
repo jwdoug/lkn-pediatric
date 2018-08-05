@@ -19,65 +19,7 @@ a:hover {
   color: #38618c;
 }
 
-#header {
-  color: #0496ff;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-
-a#home {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a#home > p {
-  color: #ff5964;
-}
-
-.nav-pills > li.nav-item > a.active  {
-  background-color: #ffe95c;
-  color: #000000;
-}
-
-.nav-pills > li.nav-item > a.active:hover  {
-  background-color: #e8d246;
-}
-
-.map {
-  padding: 1rem;
-}
-
-#hero {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-#main {
-  padding: 1rem;
-  margin-bottom: 5rem;
-}
-
 #aside {
   color: #ffffff;
   background-color: #0496ff;
-  padding: 15px;
-  border-radius: 5px;
-}
-
-#imgfoot {
-  max-width: 1600px;
-  min-width: 900px;
-  overflow: hidden;
-}
-
-#credits {
-  position: static;
-  color: #ffffff;
-  background-color: #46bf13;
-  padding: 2rem;
-}
-
-#credits > p > a {
-  color: #ffffff;
 }
