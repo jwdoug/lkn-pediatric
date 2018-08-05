@@ -10,16 +10,3 @@ h1 {
 h2 {
   font-family: 'Coming Soon', cursive;
 }
-
-a {
-  color: #0496ff;
-}
-
-a:hover {
-  color: #38618c;
-}
-
-#aside {
-  color: #ffffff;
-  background-color: #0496ff;
-}
