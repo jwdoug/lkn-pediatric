@@ -10,23 +10,27 @@
     <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Raleway" rel="stylesheet"> 
     <link rel="stylesheet" href="css/custom.css">
 
-    <title>Lake Norman Pediatric Therapy</title>
+    <title>Lake Norman Pediatric Therapy | Contact</title>
   </head>
   <body>
-  
-    <div class="container" id="header">
-      <a href="index.html" id="home">
-      <h1>Danielle Farese Milburn, Ph.D.</h1>
-      <p>Lake Norman Pediatric Therapy</p>
-      </a>
-    </div>
-    <div class="container" id="nav">
-        <ul class="nav nav-pills justify-content-end">
+
+    <h1 class="sr-only sr-only-focusable">Lake Norman Pediatric Therapy</h1>
+    <a href="index.html"><img src="banner.png" class="img-fluid" alt="Lake Norman Pediatric Therapy"></a>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="approach.html">Approach</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact / Directions</a>
+            <a class="nav-link" href="approach.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact / Directions</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="forms.html">Forms / Resources</a>
@@ -35,49 +39,93 @@
             <a class="nav-link" href="policies.html">Policies</a>
           </li>
         </ul>
-    </div>
+      </div>
+    </nav>
         
-    <div class="container">    
-    <div class="row">    
-      <div class="col-lg map" >
-        <h2>Corneilius Office</h2>
-        <p>Suspendisse in commodo orci. Aenean diam nibh, tempus ac dictum vitae, fringilla vel nisl. Sed. </p>
+    <div class="container mt-3">
+    
+    <div class="row mb-3">    
+      <div class="col-lg" >
+        <h2>Corneilius office</h2>
         <div class="embed-responsive embed-responsive-4by3">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.015732122199!2d-80.8934485847467!3d35.479154580241826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a956c45a1355%3A0x6f632ac61280d822!2s19453+W+Catawba+Ave+Suite+B%2C+Cornelius%2C+NC+28031!5e0!3m2!1sen!2sus!4v1533312740530" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
       
-      <div class="col-lg map">
-        <h2>Charlotte Office</h2>
-        <p>Morbi volutpat lorem ut bibendum interdum. Aliquam vehicula ante quis lacinia suscipit. In tincidunt lacus. </p>
+      <div class="col-lg mt-3 mt-lg-0">
+        <h2>Charlotte office</h2>
         <div class="embed-responsive embed-responsive-4by3">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.746004220117!2d-80.82216868475398!3d35.21279518030626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88569ff9ebab9ffd%3A0x874df5fe73df22ae!2s2014+Park+Dr%2C+Charlotte%2C+NC+28204!5e0!3m2!1sen!2sus!4v1533312802703" style="border:0" allowfullscreen></iframe>
         </div>
       </div>      
     </div>
     
-    <div class="row">    
-      <div class="col" id="main">
+    <div class="row mb-3">
+      <div class="col">
         <h2>Contact Us</h2>
-        <p>Ut aliquam velit eu turpis consectetur pharetra. Nunc ullamcorper ipsum id imperdiet pulvinar. Donec varius nulla at porta sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam in velit fringilla, egestas leo ac, maximus nulla. Vivamus euismod egestas nisi et feugiat. Cras non massa accumsan diam elementum pellentesque vitae vel ligula. </p>
-        <form>
-          Name: <input type="text" name="name"> <br>
-          Email: <input type="email" name="email"> <br>
-          Phone: <input type="tel" name="phone"> <br>
-          <textarea name="message" rows="10" cols="30"></textarea> <br>
-          <input type="submit" value="Submit">
-        </form>
+        <p>Our offices are open Monday - Friday, 9am - 5pm. To schedule an appointment or talk to our office manager, please call <a href="tel:17047287364">(704) 728-7364</a>. For after-hours emergencies, please call <a href="tel:17047289672">(704)-728-9672</a>. For other questions or comments, you may send an email to <a href="mailto:info@lknpediatrictherapy.com">info@lknpediatrictherapy</a> or fill out the form below.</p>
+        <form id="contact-form" method="post" action="contact.php" role="form">
 
-      </div>
+            <div class="messages"></div>
+
+            <div class="controls">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">First Name</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name" required="required" data-error="First name is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Last Name</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name" required="required" data-error="Last name is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email address" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>                    
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Phone</label>
+                            <input id="form_email" type="tel" name="tel" class="form-control" placeholder="Please enter your telephone number" required="required" data-error="Valid phone number is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary btn-send" value="Send message">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+      </div>      
     </div>
     
     </div>
-    </div>
     
-    <img src="footer.png" class="img-fluid" id="img-foot">
-    <div class="container-fluid text-center" id="credits">
-      <p>Copyright &copy; Lake Norman Pediatric Therapy, PLLC | Website by <a href="www.jaredwdouglas.com">Jared W. Douglas</a></p>
+    <div class="container-fluid text-center mt-5 pt-5 pb-2 bg-light" id="credits">
+      <p>Copyright &copy; Lake Norman Pediatric Therapy, PLLC | Website by <a href="https://jwdoug.github.io">Jared W. Douglas</a></p>
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
