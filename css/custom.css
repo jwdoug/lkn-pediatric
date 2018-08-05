@@ -1,5 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
+  background-image: url("bg.png");
   background-color: #ffffff;
 }
 
@@ -9,4 +10,24 @@ h1 {
 
 h2 {
   font-family: 'Coming Soon', cursive;
+}
+
+.bg-primary > ul > li > a {
+  color: #ffffff
+}
+
+.bg-primary {
+  background-color: #2ca5f8; !important
+}
+
+.bg-secondary {
+  background-color: #ffc61f; !important
+}
+
+.bg-light {
+  background-color: #fafbfc; !important
+}
+
+.bg-dark {
+  background-color: #405062; !important
 }
