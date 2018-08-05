@@ -13,7 +13,11 @@ h2 {
 }
 
 .bg-primary > ul > li > a {
-  color: #ffffff
+  color: #ffffff;
+}
+
+.bg-dark > p > a {
+  color: #ffffff;
 }
 
 .bg-primary {
