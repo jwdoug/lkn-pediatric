@@ -1,14 +1,10 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: url("bg.png");
+  background-image: url('bg.png');
   background-color: #ffffff;
 }
 
-h1 {
-  font-family: 'Coming Soon', cursive;
-}
-
-h2 {
+h1, h2 {
   font-family: 'Coming Soon', cursive;
 }
 
