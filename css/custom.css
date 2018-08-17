@@ -8,6 +8,21 @@ h1, h2 {
   font-family: 'Coming Soon', cursive;
 }
 
+div#imgFoot {
+  background-image: url("grass-159804.svg");
+  background-repeat: repeat-x;
+  overflow: hidden;
+  height: 100px;
+}
+
+#credits {
+  background-color: #4b7e1d;
+}
+
+#credits > p > a {
+  color: #ffffff;
+}
+
 .bg-primary > ul > li > a {
   color: #ffffff;
 }
